@@ -1,6 +1,10 @@
 # import sqlite lib
 import sqlite3
 
+# NOTE: create a database in memory with 
+# keep in mind that when the DB connection is closed it will disappear
+# conn = sqlite3.connect(":memory:")
+
 # establish connection with the database
 conn = sqlite3.connect('new.db')
 
